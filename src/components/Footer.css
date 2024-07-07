@@ -1,0 +1,20 @@
+footer {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  footer nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  footer button {
+    background-color: #90EE90;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  

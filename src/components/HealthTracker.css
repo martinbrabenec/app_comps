@@ -1,0 +1,35 @@
+.health-tracker {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Common styles for food and activity trackers */
+  .tracker {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 25px;
+  }
+  
+  /* Specific color for food tracker */
+  .food {
+    background-color: #90EE90;
+  }
+  
+  /* Specific color for activity tracker */
+  .activities {
+    background-color: #98FB98;
+  }
+  
+  /* Styles for "I'm feeling crazy" button */
+  .feeling-crazy {
+    background-color: #8FBC8F;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 25px;
+  }
+  

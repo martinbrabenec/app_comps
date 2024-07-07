@@ -1,0 +1,72 @@
+.quick-access-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 1rem 0;
+    margin-bottom: 20px;
+  }
+  
+  .quick-access {
+    display: flex;
+    animation: scroll 40s linear infinite;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+  
+  .quick-item {
+    flex: 0 0 25%;
+    padding: 0 5px;
+    box-sizing: border-box;
+    animation: calm 40s linear infinite;
+  }
+  
+  .quick-item:nth-child(1) {
+    animation: jump 40s linear infinite;
+  }
+  
+  .quick-item:nth-child(2) {
+    animation: jump 40s linear infinite 10s;
+  }
+  
+  .quick-item:nth-child(3) {
+    animation: jump 40s linear infinite 20s;
+  }
+  
+  .quick-item:nth-child(4) {
+    animation: jump 40s linear infinite 30s;
+  }
+  
+  @keyframes calm {
+    0%, 100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes jump {
+    0%, 24%, 100% {
+      transform: scale(1);
+    }
+    25%, 45% {
+      transform: scale(1.2);
+    }
+  }
+  
+  .quick-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Pause animation on hover */
+  .quick-access-container:hover .quick-access {
+    animation-play-state: paused;
+  }
+  
